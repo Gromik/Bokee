@@ -28,16 +28,16 @@
      inkscape:window-height="715"
      id="namedview18"
      showgrid="false"
-     inkscape:zoom="2.7737226"
-     inkscape:cx="68.5"
-     inkscape:cy="14"
+     inkscape:zoom="1.9613181"
+     inkscape:cx="185.51743"
+     inkscape:cy="49.977002"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg16" />
+     inkscape:current-layer="BUKEE" />
   <metadata
      id="metadata2">
-<?xpacket begin="ÿ" id="W5M0MpCehiHzreSzNTczkc9d"?>    <x:xmpmeta
+<?xpacket begin="½" id="W5M0MpCehiHzreSzNTczkc9d"?>    <x:xmpmeta
        x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
       <metadata>
         <rdf:RDF>
@@ -48,6 +48,7 @@
             <dc:format>image/svg+xml</dc:format>
             <dc:type
                rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            <dc:title></dc:title>
           </cc:Work>
         </rdf:RDF>
       </metadata>
@@ -96,7 +97,7 @@
        id="path4535" />
     <path
        d="m 113.59375,14.25 h -6.74023 v 5.6875 h 6.42578 l 0.17773,-2.378906 h 3.03516 V 23 h -15.75 v -2.392578 l 2.11914,-0.410156 V 5.9101562 L 100.74219,5.5 V 3.09375 h 2.11914 13.60351 v 5.4550781 h -3.0625 l -0.17773,-2.3789062 h -6.37109 v 5.0039061 h 6.74023 z"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#65e496"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab Bold';fill:#65e496;stroke:none;stroke-opacity:1"
        id="path4537" />
     <path
        d="m 131.47656,14.25 h -6.74023 v 5.6875 h 6.42578 l 0.17773,-2.378906 H 134.375 V 23 h -15.75 v -2.392578 l 2.11914,-0.410156 V 5.9101562 L 118.625,5.5 V 3.09375 h 2.11914 13.60352 v 5.4550781 h -3.0625 l -0.17774,-2.3789062 h -6.37109 v 5.0039061 h 6.74023 z"
@@ -112,4 +113,14 @@
      class="cls-4"
      d="M28,0L0,28V0H28Z"
      id="path14" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Roboto Slab';-inkscape-font-specification:'Roboto Slab';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="52.276318"
+     y="-10.396053"
+     id="text17"><tspan
+       sodipodi:role="line"
+       id="tspan15"
+       x="52.276318"
+       y="26.384769" /></text>
 </svg>
