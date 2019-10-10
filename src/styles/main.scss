@@ -14,3 +14,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.header {
+    &__logo {
+        background-image: url(../img/logo.svg);
+    }
+}
