@@ -5,3 +5,12 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+.page-main {
+    background-image: url(../img/bg-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
