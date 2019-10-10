@@ -15,7 +15,12 @@ body {
     background-size: cover;
 }
 .header {
+    display: flex;
+    justify-content: space-between;
     &__logo {
+        display: block;
+        width: 137px;
+        height: 28px;
         background-image: url(../img/logo.svg);
     }
 }
