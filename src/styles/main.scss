@@ -129,7 +129,7 @@ h3 {
     }
     &__btn {
         display: block;
-        background-color: $accent-color;
+        background: linear-gradient(to top left,#65e49c, #65e4af);
         color: $light-color;
         text-decoration: none;
         max-width: 250px;
@@ -140,6 +140,7 @@ h3 {
         margin-bottom: 19px;
         padding: 14px 0;
         letter-spacing: 0.7px;
+        border-radius: 0 -2px #b2f1be inset;
     }
 }
 .block-book { 
@@ -180,6 +181,25 @@ h3 {
             left: 86px;
         }
     }
+}
+&__btn {
+    display: block;
+    border: 0;
+    background: linear-gradient(to top left,#65e49c, #65e4af);
+    color: $light-color;
+    text-decoration: none;
+    width: 140px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 48px;
+    margin-bottom: 19px;
+    padding: 14px 0;
+    letter-spacing: 0.7px;
+    box-shadow: 0 -2px #b2f1be inset;
+} 
+&__btn--main {
+    box-shadow: 0 -2px #59ba88 inset;   
 }
 small {
     font-family: 'Open Sans Italic', sans-serif; 
@@ -273,7 +293,7 @@ small {
         &__btn {
             display: block;
             border: 0;
-            background-color: $accent-color;
+            background: linear-gradient(to top left,#65e49c, #65e4af);
             color: $light-color;
             text-decoration: none;
             width: 140px;
@@ -284,8 +304,8 @@ small {
             margin-bottom: 19px;
             padding: 14px 0;
             letter-spacing: 0.7px;
-        }
-        
+            box-shadow: 0 -2px #b2f1be inset;
+        } 
     }
     &-social{
         display: flex;
@@ -314,7 +334,10 @@ small {
 }
 .block-product {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    &-item {
+    align-items: center;
+    flex-basis: 200px;
     &-demo {
         background-image: url(../img/book_1.svg);
         background-repeat: no-repeat;
@@ -358,4 +381,22 @@ small {
         text-decoration: none;
         text-transform: uppercase;
     }
-}
+    &__btn {
+        display: block;
+        align-items: center;
+        background: linear-gradient(to top left,#65e49c, #65e4af);
+        color: $light-color;
+        text-decoration: none;
+        width: 180px;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 48px;
+        margin-bottom: 19px;
+        padding: 14px 0;
+        letter-spacing: 0.7px;
+        box-shadow: 0 -2px #b2f1be inset;
+        }
+    }
+}  
+
