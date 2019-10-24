@@ -142,6 +142,9 @@ h3 {
         letter-spacing: 0.7px;
         border-radius: 0 -2px #b2f1be inset;
     }
+    &__btn--main {
+        box-shadow: 0 -2px #59ba88 inset; 
+    }
 }
 .block-book { 
     display: flex;
@@ -197,9 +200,6 @@ h3 {
         letter-spacing: 0.7px;
         box-shadow: 0 -2px #b2f1be inset;
     } 
-    &__btn--main {
-       box-shadow: 0 -2px #59ba88 inset;  
-    }
 }
  
 small {
@@ -339,6 +339,7 @@ small {
     &-item {
     align-items: center;
     flex-basis: 200px;
+    }
     &-demo {
         background-image: url(../img/book_1.svg);
         background-repeat: no-repeat;
@@ -371,6 +372,7 @@ small {
             top: 260px;
             text-transform: none;
         }
+
     }
     &__desc {
         font-family: 'Open Sans', serif; 
@@ -384,7 +386,7 @@ small {
     }
     &__btn {
         display: block;
-        align-items: center;
+        border: 0;
         background: linear-gradient(to top left,#65e49c, #65e4af);
         color: $light-color;
         text-decoration: none;
@@ -397,7 +399,6 @@ small {
         padding: 14px 0;
         letter-spacing: 0.7px;
         box-shadow: 0 -2px #b2f1be inset;
-        }
-    }
-}  
-
+    } 
+}
+    
