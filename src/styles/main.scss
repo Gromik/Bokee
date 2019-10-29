@@ -10,6 +10,7 @@ $light-color: #fff;
 $accent-color: #65e496;
 $bg-light-color: #f5f6fa;
 $bg-dark-color: #44444f;
+$gray-color: #9191b5;
 
 body {
     font-family: 'Roboto Slab', serif;
@@ -441,7 +442,6 @@ h3 {
         text-transform: uppercase;
     }
     &__btn {
-        display: block;
         border: 0;
         background: linear-gradient(to top left,#65e49c, #65e4af);
         color: $light-color;
@@ -501,4 +501,54 @@ h3 {
         max-width: 227px;
     }
 }
-    
+.block-letter {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+        flex-basis: 49%;
+    }
+    &__title {
+        font-size:48px;
+        margin-top: 8px;
+        margin-bottom: 23px;
+        letter-spacing: 1.9px;
+    }
+    &__text {
+        font-size: 15px;
+        font-family: 'Open Sans', serif;
+        letter-spacing: 0.75px;
+    }
+    &__input {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 3px;
+        background-color: $bg-dark-color;
+        border: none;
+        color: $gray-color;
+        padding: 15px 27px;
+        letter-spacing: 0.6;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__btn {
+        display: block;
+        border: 0;
+        background: linear-gradient(to top left,#65e49c, #65e4af);
+        color: $light-color;
+        text-decoration: none;
+        width: 180px;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 21px;
+        margin-bottom: 19px;
+        padding: 14px 0;
+        letter-spacing: 0.7px;
+        box-shadow: 0 -2px #b2f1be inset;
+        width: 100%;
+        &:focus {
+            outline: none;
+        }
+    } 
+}   
