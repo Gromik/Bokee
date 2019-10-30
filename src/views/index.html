@@ -25,7 +25,9 @@
         <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto+Slab:100,400,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5360907147.js" crossorigin="anonymous"></script>   
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" href="../styles/main.css">
+
     </head>
     <body>
         @@include("../blocks/modules/header/header.html")
@@ -148,45 +150,72 @@
                         </div>
                         <div class="block-product-text">
                             <h3>Inception</h3>
-                            <p class="block-product-demo__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                            <a href="">READ MORE</a>
+                            <p class="block-product-demo__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>                            <a href="">READ MORE</a>
                         </div>
-                    </div>  
-                </div>
-                <div class="block-product">
+                    </div>
                     <div class="block-product-item">
                         <div class="block-product-demo">
-                            <h2 class="block-product-demo__title">Inception
+                            <h2 class="block-product-demo__title">Fight Club
                                 <span>Books are the best friends</span>
                                 <p class="block-product-demo__author">- By Emma Anderson</p>
                             </h2>
                         </div>
                         <div class="block-product-text">
-                            <h3>Inception</h3>
-                            <p class="block-product-demo__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <h3>Fight Club</h3>
+                            <p class="block-product-demo__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                             <a href="">READ MORE</a>
                         </div>
-                    </div>  
-                </div>
-                <div class="block-product">
+                    </div>
                     <div class="block-product-item">
                         <div class="block-product-demo">
-                            <h2 class="block-product-demo__title">Inception
+                            <h2 class="block-product-demo__title">Daredevils
                                 <span>Books are the best friends</span>
                                 <p class="block-product-demo__author">- By Emma Anderson</p>
                             </h2>
                         </div>
                         <div class="block-product-text">
-                            <h3>Inception</h3>
-                            <p class="block-product-demo__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <h3>Daredevils</h3>
+                            <p class="block-product-demo__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>                            
                             <a href="">READ MORE</a>
                         </div>
-                    </div>  
+                    </div>   
                 </div>
                 <a href="" class="block-product__btn">Browse all books</a>
             </div>
         </div>
-        <div></div>
+        <div class="page">
+            <div class="wpap">
+                <div class="block-carousel">
+                    <div>
+                        <div class="block-carousel-ava">
+                            <div class="block-carousel-thumb">
+                                <img src="../img/feedback.png" alt="">
+                            </div>
+                            <span class="block-carousel-bg"></span>
+                        </div>
+                        <h3>Kate Dennings</h3>
+                        <p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+                        <p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    </div>
+                    <div>
+                        <div class="block-carousel-thumb">
+                            <img src="../img/feedback.png" alt="">
+                        </div>
+                        <h3>Kate Dennings</h3>
+                        <p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+                        <p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    </div>
+                    <div>
+                        <div class="block-carousel-thumb">
+                            <img src="../img/feedback.png" alt="">
+                        </div>
+                        <h3>Kate Dennings</h3>
+                        <p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
+                        <p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="page">
             <div class="wrap">
                 <div class="block-author">
@@ -301,8 +330,16 @@
                 </div>
             </div>
         </div>
-        @@include("../blocks/modules/footer/footer.html")
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="../js/main.js"></script>
-        <script src="../js/vendor.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('.block-carousel').slick({
+                dots: true,
+                arrows: false,
+            });
+        });
+        </script>
     </body>
 </html>
