@@ -20,6 +20,8 @@ body {
 .wrap {
     max-width: 1170px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 } 
 h3 {
     font-size: 24px;
@@ -31,13 +33,15 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     color: $light-color;
-    padding-bottom: 50px;
+    padding-bottom: 160px;
 }
 .page {
     padding-top: 161px;
-    padding-bottom: 160px;
+    padding-bottom: 140px;
+    position: relative;
     &_gray {
         background-color: $bg-light-color;
+        padding-bottom: 239px;
     }
     &__title {
         font-size:48px;
@@ -52,20 +56,24 @@ h3 {
         letter-spacing: 0.9px;
     }
     &__btn {
-        display: block;
         border: 0;
         background: linear-gradient(to top left,#65e49c, #65e4af);
         color: $light-color;
         text-decoration: none;
-        max-width: 137px;
         border-radius: 3px;
         text-align: center;
         font-size: 18px;
         margin-top: 24px;
-        padding: 14px 0;
+        padding: 11px 45px 15px 45px;
         letter-spacing: 0.7px;
         box-shadow: 0 -2px #b2f1be inset;
     } 
+    &__svg {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
 }
 .header {
     display: flex;
@@ -73,12 +81,12 @@ h3 {
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
-    padding-top: 38px;
-    padding-bottom: 166px;
+    padding: 40px 14px 174px 17px; 
     &__logo {
         display: block;
         width: 137px;
         height: 28px;
+        margin-top: -3px;
         background-image: url(../img/logo.svg);
     }
     &-list {
@@ -95,15 +103,17 @@ h3 {
             transition: 0.2s;
             &:hover {
                 border-bottom: 3px solid $accent-color;
+                margin-bottom: 3px;
             }
         }
         &__item-active {
             border-bottom: 3px solid $accent-color;
+            margin-bottom: 3px;
             }
         &__link {
             color: $light-color;
             text-decoration: none;
-            letter-spacing: 0.65px;
+            letter-spacing: 0.55px;
             
         }  
     }
@@ -118,31 +128,33 @@ h3 {
         font-size: 18px;
         letter-spacing: 0.85px;
         margin-bottom: 43px;
-        margin-left: 4px;
-        margin-top: 1px;
+        margin-left: 2px;
     }
     &__name_top {
-        margin-top: 16px;
-        margin-left: 5px;
+        margin-top: 11px;
+        margin-left: 4px;
+        margin-bottom: 37px;
+        letter-spacing: 0.7px;
     }
     &__title {
         font-size: 48px;
         font-weight: 700;
         letter-spacing: 1.8px;
-        margin-bottom: 40px;
+        margin-bottom: 38px;
         span {
             display: block;
             font-size: 18px;
             color: $accent-color;
-            margin-top: 23px;
+            margin-top: 24px;
             letter-spacing: 0.9px;
-            margin-left: 3px;
+            margin-left: 2px;
         }
     }
     &__description {
         font-family: 'Open Sans', serif;
         font-size: 15px;
         line-height: 24px;
+        padding-right: 90px;
         margin-bottom: 24px; 
         letter-spacing: 0.75px;
     }
@@ -160,7 +172,7 @@ h3 {
         padding: 14px 0;
         letter-spacing: 0.7px;
         box-shadow: 0 -2px #b2f1be inset;
-        &__btn--main {
+        &--main {
         box-shadow: 0 -2px #59ba88 inset; 
         }
     }
@@ -271,12 +283,13 @@ h3 {
         margin-top: 49px;
         margin-left: 51px;
         margin-right: 0;
+        padding-right: 50px;
     }
 }
 .block-counter {
     display: flex ;
     justify-content: space-around;
-    margin-top: 152px;
+    margin-top: 194px;
     p{
         font-family: 'Open Sans', sans-serif;
         text-align: center;
@@ -289,20 +302,20 @@ h3 {
             font-size: 80px;
             margin-bottom: 45px;
             color: $accent-color;
-            margin-bottom: 32px;
-
         }
     }   
 }
 .block-about {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 83px;
     h3 {
         margin-bottom: 20px;
     }
     p {
         font-family: 'Open Sans', serif; 
+        letter-spacing: 0.7px;
+        margin-bottom: 0;
     }
     &-text {
         flex-basis: 41%;
@@ -327,6 +340,7 @@ h3 {
                 letter-spacing: 0.7px;
                 &::before {
                     content: counter(list) ". ";
+                    padding-left: 7px;
                 }
                 &::after {
                     content: "+";
@@ -342,6 +356,7 @@ h3 {
                 }
             }
         }
+        
         &__btn {
             display: block;
             border: 0;
@@ -352,9 +367,9 @@ h3 {
             border-radius: 3px;
             text-align: center;
             font-size: 18px;
-            margin-top: 48px;
+            margin-top: 30px;
             margin-bottom: 19px;
-            padding: 14px 0;
+            padding: 11px 45px 15px 45px;
             letter-spacing: 0.7px;
             box-shadow: 0 -2px #b2f1be inset;
         } 
@@ -372,6 +387,7 @@ h3 {
         &__list {
             list-style-type: none;
             padding-left: 23px;
+            padding-top: 18px;
             &>li{
                 display: inline-block;
                 vertical-align: middle;
@@ -386,7 +402,8 @@ h3 {
 }
 .block-product {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 67px;
     & + .page_btn {
         display: block;
         margin: 84px auto 0;
@@ -395,29 +412,34 @@ h3 {
     }
     &-item {
     align-items: center;
-    flex-basis: 200px;
+    margin: 0 auto;
+    flex-basis: 300px;
     }
     &-demo {
         background-image: url(../img/book_1.svg);
         background-repeat: no-repeat;
         height: 410px;
         width: 275px;
+        border-radius: 7px;
         &__title {
+            text-align: center;
             color: $light-color;
             font-size: 24px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             position: relative;
-            left: 75px;
-            top: 75px;
+            left: 8px;
+            top: 71px;
             span {
                 font-family: 'Open Sans', serif;
                 font-size: 12px;
+                font-weight: 400;
                 color: $accent-color;
                 display: block;
                 text-transform: initial;
-                margin-top: 7px;
+                padding-top: 7px;
+                margin: 0 auto;
                 letter-spacing: 0.7px;
             }
         }
@@ -425,18 +447,22 @@ h3 {
             font-family: 'Open Sans', serif;
             position: absolute;
             font-size: 12px;
+            font-weight: 400;
             color: $accent-color;
-            top: 260px;
+            top: 275px;
+            left: 64px;
             text-transform: none;
         }
-
-    }
-    &__desc {
-        font-family: 'Open Sans', serif; 
+        &__desc {
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 15px;
+            font-family: 'Open Sans', serif; 
+        }
     }
     h3{
         text-align: center;
-        margin-top: 30px;
+        margin-top: 34px;
         font-size: 24px;
         letter-spacing: 1.2px;
         font-weight: 700;
@@ -445,10 +471,13 @@ h3 {
     a {
         font-family: 'Open Sans', serif;
         font-weight: 700;
-        color: $accent-color;
-        text-align: center;
+        letter-spacing: 1.2px;
+        color: #65e496;
         text-decoration: none;
         text-transform: uppercase;
+        text-align: center;
+        display: block;
+        margin-top: 19px;
     }
     &__btn {
         display: block;
@@ -461,9 +490,8 @@ h3 {
         border-radius: 3px;
         text-align: center;
         font-size: 18px;
-        margin-top: 48px;
-        margin-bottom: 19px;
-        padding: 14px 0;
+        margin: 81px auto 18px;
+        padding: 13px 20px 13px 20px;
         letter-spacing: 0.7px;
         box-shadow: 0 -2px #b2f1be inset;
     } 
@@ -638,7 +666,7 @@ h3 {
     }
     &-thumb {
         display: block;
-        margin: 0 auto 0;
+        margin: 0 auto;
         position: relative;
         overflow: hidden;
         width: 152px;
